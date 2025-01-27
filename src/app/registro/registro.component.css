@@ -1,0 +1,47 @@
+.form-container {
+    width: 100%; /* Ajustar al 100% del contenedor padre */
+    max-width: 400px; /* Ancho máximo para formularios compactos */
+    margin: 0 auto; /* Centrar el formulario en la página */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 1px solid #ccc; /* Borde para resaltar */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .form-container h2 {
+    text-align: center; /* Centrar el título */
+    margin-bottom: 20px;
+  }
+  
+  .form-container label {
+    display: block; /* Asegura que esté en una nueva línea */
+    margin-bottom: 8px; /* Espacio entre el label y el input */
+    font-weight: bold; /* Resaltar el texto del label */
+  }
+  
+  .form-container input {
+    display: block; /* Asegura que esté en una nueva línea */
+    width: 100%; /* Que ocupe todo el ancho disponible */
+    padding: 8px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado entre inputs */
+    border: 1px solid #ccc; /* Borde básico */
+    border-radius: 4px; /* Esquinas redondeadas */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+  }
+  
+  .form-container button {
+    width: 100%; /* Botón que ocupa todo el ancho */
+    padding: 10px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 4px; /* Esquinas redondeadas */
+    font-size: 16px; /* Texto más grande */
+    cursor: pointer; /* Cambia el cursor a mano al pasar */
+  }
+  
+  .form-container button:hover {
+    background-color: #2569b3; /* Color más oscuro al pasar el cursor */
+  }
+  

@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { RegistroComponent } from "./registro/registro.component";
+import { AdminComponent } from "./admin/admin.component";
+import { RankingComponent } from './ranking/ranking.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RegistroComponent, AdminComponent,RankingComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'ProyectoTecsu';

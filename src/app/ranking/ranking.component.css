@@ -1,0 +1,57 @@
+.ranking-container {
+    width: 90%;
+    max-width: 800px; /* Limita el ancho máximo del contenedor */
+    margin: 20px auto; /* Centra el contenedor */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+  }
+  
+  .ranking-container h2 {
+    text-align: center; /* Centrar el título */
+    font-size: 24px; /* Tamaño más grande */
+    color: #333; /* Texto oscuro */
+    margin-bottom: 20px; /* Espaciado debajo */
+  }
+  
+  table {
+    width: 100%; /* Que ocupe todo el ancho */
+    border-collapse: collapse; /* Bordes colapsados */
+  }
+  
+  thead {
+    background-color: #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+  }
+  
+  th, td {
+    text-align: center; /* Centrar texto en columnas */
+    padding: 12px 8px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Líneas divisorias */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fila alterna */
+  }
+  
+  tbody tr:hover {
+    background-color: #eaf4ff; /* Resaltar fila al pasar */
+  }
+  
+  th {
+    font-weight: bold; /* Resaltar encabezados */
+    font-size: 16px; /* Tamaño más grande */
+  }
+  
+  td {
+    font-size: 14px;
+  }
+  
+  img {
+    width: 40px; /* Tamaño estándar para imágenes */
+    height: 40px;
+    border-radius: 50%; /* Esquinas redondeadas para fotos */
+  }
+  
