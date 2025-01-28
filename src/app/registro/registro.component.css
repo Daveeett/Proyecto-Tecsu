@@ -1,12 +1,14 @@
 .form-container {
     width: 100%; 
-    max-width: 400px; 
+    max-width: 600px; 
     margin: 0 auto; 
-    padding: 20px;
-    background-color: #f9f9f9; 
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 30px;
+    font-family: 'Ledger',serif;
+    color:white;
+
+    background-color: transparent;
+
+     
   }
   
   .form-container h2 {
@@ -17,7 +19,7 @@
   .form-container label {
     display: block; 
     margin-bottom: 8px; 
-    font-weight: bold;
+    
   }
   
   .form-container input {
@@ -25,23 +27,37 @@
     width: 100%; 
     padding: 8px; 
     margin-bottom: 20px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+    border: 1px solid #727272; 
+    border-radius: 10px; 
     box-sizing: border-box;
+    background-color: #313131;
+  }
+  .form-container input:focus { 
+    border: 3px solid #ffffff;
+    outline: none;
   }
   
-  .form-container button {
-    width: 100%; 
-    padding: 10px; 
-    background-color: #007bff; 
-    color: white; 
-    border: none;
-    border-radius: 4px; 
-    font-size: 16px; 
-    cursor: pointer; 
+  .button-1 {
+    width: 190%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border-radius: 10px;
   }
   
-  .form-container button:hover {
-    background-color: #2569b3; 
+  .button-1:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
   }
-  
+

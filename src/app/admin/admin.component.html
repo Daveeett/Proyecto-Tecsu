@@ -10,8 +10,8 @@
         [(ngModel)]="cantidadFiltro"
         placeholder="Mínimo de contribuciones"
       />
-      <button (click)="aplicarFiltros()">Aplicar Filtros</button>
-      <button (click)="resetearFiltros()">Resetear Filtros</button>
+      <button class="btn btn-primary mx-3" (click)="aplicarFiltros()">Aplicar Filtros</button>
+      <button class="btn btn-danger"(click)="resetearFiltros()">Resetear Filtros</button>
     </div>
 
     <div class="usuarios-lista">
@@ -24,6 +24,26 @@
             <th>Última Contribución</th>
           </tr>
         </thead>
+        <tbody>
+          <tr>
+            <th>Dav</th>
+            <th>092342423</th>
+            <th>42</th>
+            <th>2025/01/27</th>
+          </tr>
+          <tr>
+            <th>Issac</th>
+            <th>0923434323</th>
+            <th>40</th>
+            <th>2025/01/27</th>
+          </tr>
+          <tr>
+            <th>Adrian</th>
+            <th>0923442423</th>
+            <th>30</th>
+            <th>2025/01/27</th>
+          </tr>
+        </tbody>
         <!--<tbody> -->
         <!--  <tr *ngFor="let usuario of usuariosFiltrados"> -->
         <!--    <td>{{ usuario.nombre }}</td> -->

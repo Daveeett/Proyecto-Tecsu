@@ -39,21 +39,20 @@ export class AdminComponent implements OnInit {
   //}
 //
   aplicarFiltros() {
-  //  this.usuariosFiltrados = this.usuarios.filter((usuario) => {
-  //    const cumpleFecha =
-  //      !this.fechaFiltro ||
-  //      new Date(usuario.fecha).toISOString().split('T')[0] ===
-  //        this.fechaFiltro;
-  //    const cumpleCantidad =
-  //      this.cantidadFiltro === null || usuario.cantidad >= this.cantidadFiltro;
-//
-  //    return cumpleFecha && cumpleCantidad;
-  //  });
+    this.usuariosFiltrados = this.usuarios.filter((usuario) => {
+      const cumpleFecha =
+        !this.fechaFiltro ||
+        new Date(usuario.fecha).toISOString().split('T')[0] ===
+          this.fechaFiltro;
+      const cumpleCantidad =
+        this.cantidadFiltro === null || usuario.cantidad >= this.cantidadFiltro;
+    return cumpleFecha && cumpleCantidad;
+    });
   }
-//
+
   resetearFiltros() {
-  //  this.fechaFiltro = '';
-  //  this.cantidadFiltro = null;
-  //  this.usuariosFiltrados = [...this.usuarios];
+    this.fechaFiltro = '';
+    this.cantidadFiltro = null;
+    this.usuariosFiltrados = [...this.usuarios];
   }
 }
