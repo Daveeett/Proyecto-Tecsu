@@ -1,0 +1,11 @@
+.background{
+    background-color: rgb(194, 180, 180);
+}
+body{
+    margin: 0;
+
+}
+
+.bg-page {
+    background: linear-gradient(to right, var(--light-green), var(--light-blue));
+  }

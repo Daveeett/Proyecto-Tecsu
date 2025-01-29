@@ -1,12 +1,12 @@
 .form-container {
-    width: 100%; 
+    width: 120%; 
     max-width: 600px; 
     margin: 0 auto; 
-    padding: 30px;
+    padding: 40px;
     font-family: 'Ledger',serif;
-    color:white;
-
-    background-color: transparent;
+    color:var(--dark-green);
+    background-color: white;
+    border-radius: 5%;
 
      
   }
@@ -30,7 +30,7 @@
     border: 1px solid #727272; 
     border-radius: 10px; 
     box-sizing: border-box;
-    background-color: #313131;
+    background-color: var(--dark-green);;
   }
   .form-container input:focus { 
     border: 3px solid #ffffff;
