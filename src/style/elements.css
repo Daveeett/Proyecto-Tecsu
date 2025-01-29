@@ -1,0 +1,16 @@
+
+
+
+  .btn-green {
+   
+    color: var(--dark-green);
+    padding: 10%;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: darken(var(--dark-green), 10%);
+    }
+}

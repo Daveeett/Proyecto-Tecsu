@@ -1,0 +1,42 @@
+.admin-container {
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Ledger',serif;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filters label {
+    margin-right: 10px;
+  }
+  
+  .filters input {
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  table {
+    width: 100%; 
+    border:none
+
+  }
+  
+  thead {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    
+  }
+  
+  th, td {
+    text-align: center; 
+    padding: 5px 3px; 
+    border: none;
+  }
+
+
+  
