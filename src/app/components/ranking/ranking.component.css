@@ -33,7 +33,7 @@
   }
   
   tbody tr:hover {
-    background-color: #272727; 
+    background-color: #5c5c5c; 
   }
   
   th {
@@ -46,4 +46,8 @@
     color: white;
   }
 
+  .ranking-icon {
+    width: 30px;
+    height: 10px;
+  }
   

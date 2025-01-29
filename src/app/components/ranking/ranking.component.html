@@ -1,37 +1,28 @@
-<div class="ranking-container">
-    <h2 >TOP COLABORADORES</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Posición</th>
-          <th>Nombre</th>
-          <th>Cantidad</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr > 
-          <td>1</td>
-          <td>Dav</td>
-          <td>42</td>
-        </tr>
-        <tr > 
-          <td>2</td>
-          <td>Issac</td>
-          <td>40</td>
-        </tr>
-        <tr > 
-          <td>3</td>
-          <td>Adrian</td>
-          <td>30</td>
-        </tr>
-      </tbody>
-      <!--<tbody -->
-      <!--  <tr *ngFor="let persona of ranking; let i = index"> -->
-      <!--    <td>{{ i + 1 }}</td> -->
-      <!--    <td>{{ persona.nombre }}</td> -->
-      <!--    <td>{{ persona.cantidad }}</td> -->
-      <!--  </tr> -->
-      <!--</tbody> -->
-    </table>
+<div class="ranking-container content-center mt-10">
+  <p class="text-3xl font-bold md:text-5xl">TOP COLABORADORES</p>
+
+  <div class="top-container flex justify-center h-[150px] gap-8 p-8">
+    <div class="top-icon w-21">
+      <img src="./assets/images/oro.png" alt="oro">
+      <p class="text-center mt-2 font-bold">Juan Pérez</p>
+    </div>
+    <div class="top-icon w-21">
+      <img src="./assets/images/plata.png" alt="plata">
+      <p class="text-center mt-2 font-bold">María López</p>
+    </div>
+    <div class="top-icon w-21">
+      <img src="./assets/images/bronce.png" alt="bronce">
+      <p class="text-center mt-2 font-bold">Carlos García</p>
+    </div>
   </div>
+
+  <!-- 
+  <div class="top-container flex justify-center h-[150px] gap-8 p-8">
+    <div *ngFor="let user of ranking" class="top-icon w-21">
+      <img src="" alt="">
+      <p class="text-center">{{ user.name }}</p>
+    </div>
+  </div>
+  -->
+</div>
   

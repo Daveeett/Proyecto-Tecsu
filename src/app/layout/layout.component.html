@@ -1,6 +1,6 @@
 <app-navigation></app-navigation>
 <div class="mix-blend-lighten  bg-page  p-10 ">
-    <div class=" flex flex-row justify-between py-6">
+    <div id="inicio" class=" flex flex-row justify-between py-6">
 
         <div class="mx-10 justify-center">
            <app-design></app-design>
@@ -12,13 +12,13 @@
 
        
     </div>
-    <div class=" flex flex-row justify-evenly py-18 md:flex flex-wrap sm:flex-wrap ">
+    <div class=" flex flex-row justify-evenly py-18  md:flex flex-wrap sm:flex-wrap ">
 
         <div class="p-8 justify-center">
           <app-about></app-about>
         </div>
 
-        <div class="">
+        <div id="registro">
             <app-registro></app-registro>
         </div>
 
@@ -26,7 +26,9 @@
     </div>
     
     
-    <app-ranking></app-ranking>
+    <div id="ranking" class="mt-4">
+        <app-ranking></app-ranking>
+    </div>
    
 </div>
-<app-footer></app-footer>
+<app-footer id="about"></app-footer>

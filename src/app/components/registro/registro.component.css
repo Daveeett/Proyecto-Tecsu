@@ -8,7 +8,12 @@
     background-color: white;
     border-radius: 5%;
 
-     
+
+  }
+  @media (max-width: 600px) {
+    .form-container {
+        width: 100%;
+    }
   }
   
   .form-container h2 {
@@ -27,7 +32,7 @@
     width: 100%; 
     padding: 8px; 
     margin-bottom: 20px; 
-    border: 1px solid #727272; 
+    color: #ffffff;
     border-radius: 10px; 
     box-sizing: border-box;
     background-color: var(--dark-green);;
@@ -38,12 +43,12 @@
   }
   
   .button-1 {
-    width: 190%;
+    width: 100%;
     font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #727272;
+    color: var(--dark-green);
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em 0.5em;
