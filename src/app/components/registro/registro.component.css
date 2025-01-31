@@ -4,11 +4,9 @@
     margin: 0 auto; 
     padding: 40px;
     font-family: 'Ledger',serif;
-    color:var(--dark-green);
+    color:black;
     background-color: white;
     border-radius: 5%;
-
-
   }
   @media (max-width: 600px) {
     .form-container {
@@ -32,10 +30,10 @@
     width: 100%; 
     padding: 8px; 
     margin-bottom: 20px; 
-    color: #ffffff;
+    color: black;
     border-radius: 10px; 
     box-sizing: border-box;
-    background-color: var(--dark-green);;
+    background-color: rgb(150, 243, 255);
   }
   .form-container input:focus { 
     border: 3px solid #ffffff;
@@ -48,7 +46,7 @@
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--dark-green);
+    color:  rgb(113, 238, 255);
     cursor: pointer;
     border: 3px solid;
     padding: 0.25em ;
