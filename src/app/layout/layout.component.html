@@ -1,21 +1,23 @@
 <app-navigation></app-navigation>
-<div class="mix-blend-lighten  bg-page  p-10 ">
-    <div id="inicio" class=" flex flex-row justify-evenly py-6 md:flex flex-wrap-reverse">
+<div class="mix-blend-lighten .backdrop-blur-2xl bg-page  p-10 ">
+
+
+    <div id="inicio" class=" flex flex-row w-full gap-40 justify-center py-6 md:flex flex-wrap-reverse">
 
         
 
-        <div class="mx-8 justify-center">
-       <img src="./assets/images/plata.png" class="w-80 h-80">
+        <div class="mt-0 ">
+       <img src="./assets/images/papelera.png" class="size-96 contrast-70 opacity-80  drop-shadow-2xl">
         </div>
 
-        <div class="mx-2 justify-center">
+        <div class="my-10 ">
             <app-design></app-design>
          </div>
        
     </div>
-    <div class=" flex flex-row justify-evenly py-18  md:flex flex-wrap sm:flex-wrap ">
+    <div class=" flex flex-row justify-center gap-40 py-18 mt-10 md:flex flex-wrap sm:flex-wrap ">
 
-        <div class="p-8 justify-center">
+        <div class="mt-5 justify-center">
           <app-about></app-about>
         </div>
 
@@ -27,9 +29,12 @@
     </div>
     
     
-    <div id="ranking" class="mt-4">
+    <div class="mt-20 mb-20" >
         <app-ranking></app-ranking>
     </div>
    
+
 </div>
-<app-footer id="about"></app-footer>
+<div class="mt-6 ">
+    <app-footer  id="about"></app-footer>
+</div>

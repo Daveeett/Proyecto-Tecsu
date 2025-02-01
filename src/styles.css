@@ -1,16 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import '@fontsource/rubik-maps';
+
 
 :root {
     --light-green: #cdd6bc;
+    --lightest-green: #f1f7e6;
     --dark-green: #73762a;
     --light-blue: #91c9f6;
     --dark-blue: #4d6AAA;
-    --dark-orange: #4d6AAA;
+    --dark-orange: #7c6244;
     --darkest-green: #374c2a;
-    --light-color: #e9d9b4;
+    --light-color: #efe6d3;
     --dark-color: #343a40;
     --body-bg: #f8f9fa;
     --text-color: #343a40;

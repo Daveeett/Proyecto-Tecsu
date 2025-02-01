@@ -51,3 +51,12 @@
     height: 10px;
   }
   
+  .txt-content{
+    color: var(--light-color);
+
+  }
+
+  .txt-title{
+    color: var(--dark-orange);
+
+  }
