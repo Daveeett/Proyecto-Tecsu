@@ -1,3 +1,385 @@
 .back{
     background-color: white;
 }
+
+.tooltip-container {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 20px;
+    padding: 1em 2.5em;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    transform-origin: bottom;
+    padding: 0.5em 1em;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: var(--background);
+    border-radius: 4px;
+    min-width: 300px;
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: var(--background);
+}
+
+.tooltip-container:hover .tooltip {
+    top: -45px;
+    opacity: 10;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+}
+
+.tooltip-container:hover {
+    transform: scale(0.9);
+}
+
+.tooltip-container {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255,0.01);
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.1),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  .profile {
+    background: #2a2b2f;
+    border-radius: 10px 15px;
+    padding: 10px;
+    border: 1px solid #52382f;
+  }
+  
+  .tooltip-container:hover .tooltip {
+    top: -150px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .icon {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+  }
+  .layer {
+    width: 55px;
+    height: 55px;
+    transition: transform 0.3s;
+  }
+  .icon:hover .layer {
+    transform: rotate(-35deg) skew(20deg);
+  }
+  .layer span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    transition: all 0.3s;
+  }
+  
+  .layer span,
+  .text {
+    color: rgb(255, 255, 255);
+    border-color: white;
+  }
+  
+  .icon:hover .layer span {
+    box-shadow: -1px 1px 3px black;
+  }
+  .icon .text {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    opacity: 0;
+    font-weight: 500;
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+  }
+  .icon:hover .text {
+    bottom: -35px;
+    opacity: 1;
+  }
+  
+  .icon:hover .layer span:nth-child(1) {
+    opacity: 0.2;
+  }
+  .icon:hover .layer span:nth-child(2) {
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+  }
+  .icon:hover .layer span:nth-child(3) {
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+  }
+  .icon:hover .layer span:nth-child(4) {
+    opacity: 0.8;
+    transform: translate(15px, -15px);
+  }
+  .icon:hover .layer span:nth-child(5) {
+    opacity: 1;
+    transform: translate(20px, -20px);
+  }
+  
+  .instagramSVG {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: -webkit-linear-gradient(
+      60deg,
+      #ffffff 0%,
+      rgb(187, 187, 187) 25%,
+      #a3a3a3 50%,
+      #9c9c9c 75%,
+      #868686 100%
+    );
+
+
+  }
+  .user {
+    display: flex;
+    gap: 10px;
+  }
+  .img {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  .name {
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    color: #fff;
+  }
+  .about {
+    color: #ccc;
+    padding-top: 5px;
+  }
+
+.tooltip-container-2 {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    border-radius: 10px;
+  }
+  
+  .tooltip-2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  .profile-2 {
+    background: #ffffff;
+    border-radius: 10px 15px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+  }
+  
+  .tooltip-container-2:hover .tooltip-2 {
+    top: -150px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .icon-2 {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    position: relative;
+  }
+  .icon-2 .layer-2 {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+    transition: transform 0.3s, border 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  .icon-2:hover .layer-2 {
+    transform: rotate(-35deg) skew(20deg);
+    box-shadow: 0 0 30px rgb(255, 255, 255), 0 0 40px rgba(255, 255, 255, 0.7);
+  }
+  
+  .layer-2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .layer-2 span,
+  .text-2 {
+    color: black;
+
+  }
+  
+  .icon-2:hover .layer-2 span {
+    box-shadow: -1px 1px 3px black;
+  }
+  
+  .icon-2 .text-2 {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    opacity: 0;
+    font-weight: 500;
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .icon-2:hover .text-2 {
+    bottom: -35px;
+    opacity: 1;
+  }
+  
+  .icon-2:hover .layer-2 span:nth-child(1) {
+    opacity: 0.2;
+  }
+  
+  .icon-2:hover .layer-2 span:nth-child(2) {
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+  }
+  
+  .icon-2:hover .layer-2 span:nth-child(3) {
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+  }
+  
+  .icon-2:hover .layer-2 span:nth-child(4) {
+    opacity: 0.8;
+    transform: translate(15px, -15px);
+  }
+  
+  .icon-2:hover .layer-2 span:nth-child(5) {
+    opacity: 1;
+    transform: translate(20px, -20px);
+  }
+  
+  .facebookSVG {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border-radius: 50%;
+    background: linear-gradient(
+      45deg,
+      black 0%,
+      #3b5998 25%,
+      black 50%,
+      #3b5998 75%,
+      black 100%
+    );
+  }
+  
+  .user-2 {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .img-2 {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  
+  .name-2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+  }
+  
+  .details-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .about-2 {
+    color: #ccc;
+    padding-top: 5px;
+  }
+  
+.social-icons-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.tooltip-container {
+    display: inline-block; 
+}
