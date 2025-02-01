@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@fontsource/rubik-maps';
 
 :root {
     --light-green: #cdd6bc;
@@ -14,3 +15,76 @@
     --body-bg: #f8f9fa;
     --text-color: #343a40;
   } 
+
+  
+  .rubik-maps-regular {
+    font-family: 'Rubik Maps', serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .kulim-park-extralight {
+    font-family: "Kulim Park", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kulim-park-light {
+    font-family: "Kulim Park", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kulim-park-regular {
+    font-family: "Kulim Park", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kulim-park-semibold {
+    font-family: "Kulim Park", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kulim-park-bold {
+    font-family: "Kulim Park", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .kulim-park-extralight-italic {
+    font-family: "Kulim Park", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .kulim-park-light-italic {
+    font-family: "Kulim Park", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .kulim-park-regular-italic {
+    font-family: "Kulim Park", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .kulim-park-semibold-italic {
+    font-family: "Kulim Park", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .kulim-park-bold-italic {
+    font-family: "Kulim Park", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .braah-one-regular {
+    font-family: "Braah One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
