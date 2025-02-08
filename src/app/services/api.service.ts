@@ -1,24 +1,33 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
+import { Usuario } from '../interfaces/usuario';
+import { Login } from '../interfaces/login';
+import { Ranking } from '../interfaces/ranking';
+import { guardarpuntos } from '../interfaces/guardarpuntos';
+import { ResponseApi } from '../interfaces/responseApi';
 @Injectable({
   providedIn: 'root',
 })
 export class ApiService {
-  private baseUrl = 'http://localhost:4200/api'; 
+  private baseUrl = 'http://localhost:7279/api/User'; 
 
   constructor(private http: HttpClient) {}
 
-  registrarUsuario(nombre: string, cedula: string): Observable<any> {
-    return this.http.post(`${this.baseUrl}/registro`, { nombre, cedula });
+  createUser(user: Usuario): Observable<ResponseApi<Usuario>> {
+    return this.http.post<ResponseApi<Usuario>>(`${this.baseUrl}/CreateUser`, user);
   }
 
-  obtenerRanking(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/ranking`);
+  login(credenciales: Login): Observable<ResponseApi<Login>> {
+    return this.http.post<ResponseApi<Login>>(`${this.baseUrl}/Login`, { credenciales });
   }
-  obtenerUsuarios(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/usuarios`);
+
+  obtenerRanking(): Observable<ResponseApi<Ranking[]>> {
+    return this.http.get<ResponseApi<Ranking[]>>(`${this.baseUrl}/GetRanking`);
+  }
+  
+  guardarPuntos(puntos: guardarpuntos): Observable<ResponseApi<any>> {
+    return this.http.post<ResponseApi<any>>(`${this.baseUrl}/SavePoints`, puntos);
   }
   
 }

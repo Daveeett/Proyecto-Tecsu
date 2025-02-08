@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
+import { Ranking } from '../../interfaces/ranking';
 
 @Component({
   selector: 'app-ranking',
@@ -8,22 +9,24 @@ import { ApiService } from '../../services/api.service';
   standalone:true
 })
 export class RankingComponent implements OnInit {
- ranking: any[] = [];
+ ranking: Ranking[] = [];
 
   constructor(private apiService: ApiService) {}
   
   ngOnInit() {
-  //  this.obtenerRanking();
+    this.obtenerRanking();
   }
-//
-  //obtenerRanking() {
-  //  this.apiService.obtenerRanking().subscribe(
-  //    (response) => {
-  //      this.ranking = response;
-  //    },
-  //    (error) => {
-  //      alert('Error al cargar el ranking.');
-  //    }
-  //  );
-  //}
+
+  obtenerRanking() {
+    this.apiService.obtenerRanking().subscribe({
+      next: (response) => {
+        console.log(response); 
+        this.ranking = response.result;
+        console.log(this.ranking); 
+      },
+      error: (error) => {
+        alert('Error al cargar el ranking.');
+      }
+    });
+  }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../../services/api.service';
+import { Usuario } from '../../interfaces/usuario';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -12,28 +13,39 @@ import { FormsModule } from '@angular/forms';
   ],
 })
 export class RegistroComponent {
-  nombre = '';
-  cedula = '';
+  user: Usuario = {
+    cedula: '',
+    email: '',
+    nombreCompleto: '',
+    telefono: '',
+    nombreUsuario: '',
+    contrasena: '',
+  };
 
-  constructor(private apiService: ApiService) {}
+  constructor( private userService: ApiService) {}
 
-  enviarDatos() {
-    if (this.nombre && this.cedula) {
-      const cedulaRegex = /^[0-9]{10}$/; // regex para cédula de 10 dígitos
-      if (!cedulaRegex.test(this.cedula)) {
-        alert('El número de cédula debe tener 10 dígitos.');
-        return;
-      }
-      this.apiService.registrarUsuario(this.nombre, this.cedula).subscribe(
-        (response) => {
-          alert('¡Gracias por contribuir al reciclaje!:D');
-          this.nombre = '';
-          this.cedula = '';
-        },
-        (error) => {
-          alert('Error al registrar los datos.');
-        }
-      );
-    }
+  onSubmit() {
+    this.userService.createUser(this.user).subscribe({
+      next: (response) => {
+        console.log('Usuario creado:', response);
+        alert('¡Usuario creado exitosamente!');
+        this.resetForm();
+      },
+      error: (error) => {
+        console.error('Error al crear el usuario:', error);
+        alert('Error al crear el usuario.');
+      },
+    });
+  }
+
+  private resetForm() {
+    this.user = {
+      cedula: '',
+      email: '',
+      nombreCompleto: '',
+      telefono: '',
+      nombreUsuario: '',
+      contrasena: '',
+    };
   }
 }
