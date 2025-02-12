@@ -1,25 +1,22 @@
 <div class="p-2 mt-2 animate-fadeindown" data-twe-animation-init data-twe-animation-reset="true" data-twe-animation="[fadeindown_1s_ease-in-out]">
   
-
-    <div class="flex  flex-col text-center ">
+    <div class="flex flex-col text-center ">
         
-       
         <div class="mt-6">
-            <p class="font-extrabold text-9xl rubik-maps-regular  drop-shadow-2xl txt-title  opacity-85 ">SE EL </p>
+            <p class="font-extrabold text-9xl rubik-maps-regular drop-shadow-2xl txt-title opacity-85 ">SE EL </p>
             <p class="font-extrabold text-9xl rubik-maps-regular drop-shadow-2xl txt-title opacity-75 ">LIDER</p>
         </div>
 
-    <div class="flex flex-row gap-2 justify-center mt-0 ">
-        <p class="text-5xl max-md:text-4xl  txt-title uppercase braah-one-regular text-gray-400 opacity-65 drop-shadow-2xl ">del cambio</p>
-        <button class="button-1 mt-0 max-md:mt-0 opacity-70 backdrop-blur-2xl ">🡺 </button>
-        <div>
-        
-    </div>
-    
-    </div>
-    
-    <div class="">
-        <p class="text-sm mt-1 text-slate-800 text-opacity-35 italic ">INSTITUTO TECNOLÓGICO SUDAMERICANO</p>
+        <div class="flex flex-row gap-2 justify-center mt-0 ">
+            <p class="text-5xl max-md:text-4xl txt-title uppercase braah-one-regular text-gray-400 opacity-65 drop-shadow-2xl ">del cambio</p>
+            <button (click)="displayLoginComponent()" class="button-1 mt-0 max-md:mt-0 opacity-70 backdrop-blur-2xl ">🡺 </button>
         </div>
-</div>
+        
+        <div class="">
+            <p class="text-sm mt-1 text-slate-800 text-opacity-35 italic ">INSTITUTO TECNOLÓGICO SUDAMERICANO</p>
+        </div>
+    </div>
+
+
+    <app-login></app-login>
 </div>

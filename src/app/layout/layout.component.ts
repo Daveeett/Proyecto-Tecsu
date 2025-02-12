@@ -6,11 +6,12 @@ import { FooterComponent } from './footer/footer.component';
 import { DesignComponent } from '../components/design/design/design.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from '../components/about/about.component';
+import { LoginComponent } from "../components/login/login.component";
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RegistroComponent, AdminComponent, RankingComponent, FooterComponent, DesignComponent,NavigationComponent,AboutComponent],
+  imports: [RegistroComponent, AdminComponent, RankingComponent, FooterComponent, DesignComponent, NavigationComponent, AboutComponent, LoginComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })
