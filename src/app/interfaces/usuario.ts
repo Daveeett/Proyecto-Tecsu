@@ -4,5 +4,5 @@ export interface Usuario {
     nombreCompleto:string,
     telefono:string,
     nombreUsuario:string,
-    contrasena:string,
+    clave:string,
 }

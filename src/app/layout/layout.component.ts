@@ -7,11 +7,12 @@ import { DesignComponent } from '../components/design/design/design.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from '../components/about/about.component';
 import { LoginComponent } from "../components/login/login.component";
+import { PuntosComponent } from "../components/puntos/puntos.component";
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [RegistroComponent, AdminComponent, RankingComponent, FooterComponent, DesignComponent, NavigationComponent, AboutComponent, LoginComponent],
+  imports: [RegistroComponent, AdminComponent, RankingComponent, FooterComponent, DesignComponent, NavigationComponent, AboutComponent, LoginComponent, PuntosComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css'
 })

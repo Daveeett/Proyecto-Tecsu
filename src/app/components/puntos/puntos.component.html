@@ -1,0 +1,9 @@
+<div class="form-container animate-fadeinright " data-twe-animation-init data-twe-animation-reset="true" data-twe-animation="[fadeinright_1s_ease-in-out">
+
+        <h1 class="mt-3 font-bold text-center kulim-park-regular">INGRESAR PUNTOS</h1>
+        <form class="form" (ngSubmit)="onSubmit()">
+            <input class="mt-2" [(ngModel)]="usuarioCedula" name="cedulaUsuario" placeholder="Numero de cedula" required>
+            <input class="mt-2" [(ngModel)]="cantidadBasura" name="cantidadBasura" placeholder="Cantidad de Basura" required>
+            <button class="button-1 kulim-park-regular mt-2" type="submit">Ingresar</button>
+        </form>
+</div>

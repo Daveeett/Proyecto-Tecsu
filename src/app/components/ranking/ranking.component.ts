@@ -9,7 +9,7 @@ import { Ranking } from '../../interfaces/ranking';
   standalone:true
 })
 export class RankingComponent implements OnInit {
- ranking: Ranking[] = [];
+  ranking: Ranking[] = [];
 
   constructor(private apiService: ApiService) {}
   

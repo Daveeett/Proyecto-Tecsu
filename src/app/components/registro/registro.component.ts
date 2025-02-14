@@ -13,16 +13,16 @@ import { FormsModule } from '@angular/forms';
   ],
 })
 export class RegistroComponent {
+  constructor( private userService: ApiService) {}
   user: Usuario = {
     cedula: '',
     email: '',
     nombreCompleto: '',
     telefono: '',
     nombreUsuario: '',
-    contrasena: '',
+    clave: '',
   };
 
-  constructor( private userService: ApiService) {}
 
   onSubmit() {
     this.userService.createUser(this.user).subscribe({
@@ -30,6 +30,10 @@ export class RegistroComponent {
         console.log('Usuario creado:', response);
         alert('¡Usuario creado exitosamente!');
         this.resetForm();
+        const registroComponent = document.getElementById('registroComponent');
+        if (registroComponent) {
+          registroComponent.style.display = 'none';
+        }
       },
       error: (error) => {
         console.error('Error al crear el usuario:', error);
@@ -45,7 +49,7 @@ export class RegistroComponent {
       nombreCompleto: '',
       telefono: '',
       nombreUsuario: '',
-      contrasena: '',
+      clave: '',
     };
   }
 }
