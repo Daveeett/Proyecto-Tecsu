@@ -29,5 +29,7 @@ export class PuntosComponent {
       console.error('Error al guardar puntos:', error);
       alert('Inténtalo de nuevo, asegúrate de colocar bien tu cedula!');
     });
+    this.usuarioCedula="";
+    this.cantidadBasura=0;
   }
 }
